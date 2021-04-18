@@ -1,5 +1,5 @@
 module Types
-  class UserAttributesInput < Types::BaseInputObject
+  class ProfessionalAttributesInput < Types::BaseInputObject
     argument :name, String, required: true
   end
 end

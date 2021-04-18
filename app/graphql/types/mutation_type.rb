@@ -8,5 +8,7 @@ module Types
     end
 
     field :create_user, SuccessfulMutationType, null: true, mutation: Mutations::CreateUser
+    field :create_professional, SuccessfulMutationType, null: true, mutation: Mutations::CreateProfessional
+    field :create_family_document, SuccessfulMutationType, null: true, mutation: Mutations::CreateFamilyDocument
   end
 end

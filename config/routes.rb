@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :family_documents
   resources :professionals
   devise_for :users
   if Rails.env.development?

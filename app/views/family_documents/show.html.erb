@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Professional:</strong>
+  <%= @family_document.professional_id %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @family_document.code %>
+</p>
+
+<%= link_to 'Edit', edit_family_document_path(@family_document) %> |
+<%= link_to 'Back', family_documents_path %>

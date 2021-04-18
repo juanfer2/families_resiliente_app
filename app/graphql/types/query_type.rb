@@ -8,10 +8,22 @@ module Types
     # They will be entry points for queries on your schema.
 
     # TODO: remove me
-    field :test_field, String, null: false,
+    field :healt, String, null: false,
       description: "An example field added by the generator"
-    def test_field
-      "Hello World!"
+    def healt
+      "OK"
+    end
+
+    field :professionals, [Types::ProfessionalType], null: true,
+      description: 'Get professionals'
+    def professionals
+      Professional.all
+    end
+
+    field :family_documents, [Types::FamilyDocumentType], null: true, 
+      description: 'Get professionals'
+    def family_documents
+      FamilyDocument.all
     end
   end
 end

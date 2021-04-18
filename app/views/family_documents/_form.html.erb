@@ -1,0 +1,27 @@
+<%= form_with(model: family_document) do |form| %>
+  <% if family_document.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(family_document.errors.count, "error") %> prohibited this family_document from being saved:</h2>
+
+      <ul>
+        <% family_document.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :professional_id %>
+    <%= form.text_field :professional_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

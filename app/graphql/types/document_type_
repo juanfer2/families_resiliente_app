@@ -1,0 +1,5 @@
+module Types
+  class DocumentType < Types::BaseObject
+    field :document_url, String, null: false, description: "The reservation's id"
+  end
+end
