@@ -12,7 +12,7 @@ module Users
 
     private
 
-    def create  
+    def create 
       User.create!(user_attributes)
     end
   end
